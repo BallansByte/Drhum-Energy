@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drhum Energy - Contact Us</title>
+    <link rel="stylesheet" href="style2.scss">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <a href="#" class="logo">Drhum Energy</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+                <li><a href="calculations.html">Calculations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="send_email.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h3>Our Contact Information</h3>
+                <p>Email: info@drhumenergy.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Energy Street, Oil City, Country</p>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086435653389!2d144.96305771514804!3d-37.81421797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f81b09%3A0x5045675218ce7e33!2s123%20Energy%20Street%2C%20Oil%20City%2C%20Country!5e0!3m2!1sen!2s!4v1597775933281!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Drhum Energy is committed to providing top-quality energy solutions to meet your needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Form</a></li>
+                    <li>Email: info@drhumenergy.com</li>
+                    <li>Phone: +123 456 7890</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Drhum Energy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* Variables */
+/* Basic styles for the page */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#img_logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #ffcc00;
+}
+
+/* Calculations section */
+.calculations {
+  padding: 50px 0;
+  background-image: url("istockphoto-493984327-612x612.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.calculations h1 {
+  font-size: 3rem;
+  color: #004d00;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calculations h2 {
+  font-size: 2rem;
+  color: #004d00;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(204, 204, 187, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* SCSS for the Horizontal Line */
+.styled-line {
+  border: none; /* Remove default border */
+  height: 2px; /* Line thickness */
+  background: linear-gradient(to right, #004d00, #ffcc00); /* Gradient color */
+  margin: 20px 0; /* Spacing above and below the line */
+  border-radius: 5px; /* Rounded edges */
+}
+
+label {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #004d00;
+}
+
+input[type=number],
+input[type=text] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 200px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #004d00;
+  color: white;
+}
+
+button:hover {
+  background-color: #001a00;
+}
+
+button.clear {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+button.clear:hover {
+  background-color: #cca300;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-menu li {
+    margin: 10px 0;
+  }
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo span {
+    margin-top: 5px;
+  }
+  .calculations {
+    padding: 30px 0;
+  }
+  form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  button {
+    margin: 10px 0;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=style4.css.map */
