@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com';            // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                    // Enable SMTP authentication
         $mail->Username = 'maballans@gmail.com';  // SMTP username (replace with your Gmail address)
-        $mail->Password = 'Opensesame_1!';         // SMTP password (replace with your Gmail password)
+        $mail->Password = '';         // SMTP password (replace with your Gmail password)
         $mail->SMTPSecure = 'tls';                 // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                         // TCP port to connect to
 
