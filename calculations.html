@@ -71,20 +71,43 @@
             <input type="number" id="price-per-liter" placeholder="Enter price per liter" required>
         </div>
 
-        <div class="fuel-selection">
-            <label>Select Fuel Type:</label>
-            <div class="pill-selector">
-                <button id="pms" class="pill-button active" onclick="selectFuel('PMS')">PMS</button>
-                <button id="ago" class="pill-button" onclick="selectFuel('AGO')">AGO</button>
-            </div>
-        </div>
+       
 
         <div class="result-section">
             <h3>Total Price: <span id="total-price">₵0.00</span></h3>
             <button id="calculate" onclick="calculatePrice()">Calculate</button>
         </div>
+   
+
+
+
+<!-----Volume section------>
+<div class="new-form-section">
+    <h2>Conversion Form</h2>
+    
+    <div class="input-field">
+        <label for="value">Enter Value:</label>
+        <input type="number" id="value" placeholder="Enter value" required>
     </div>
+
+    <div class="selector">
+        <div class="pill-selector">
+            <button id="trucks" class="pill-button active" onclick="selectOption('trucks')">Trucks</button>
+            <button id="volume" class="pill-button" onclick="selectOption('volume')">Volume</button>
+        </div>
+    </div>
+
+    <div class="result-section">
+        <h3>Result: <span id="result-value">₵0.00</span></h3>
+        <button id="calculate-conversion" onclick="calculateConversion()">Calculate</button>
+    </div>
+</div>
+</div>
+<!----volume section end----------->
+
     <script src="scripts.js"></script>
+
+
 
     <!-- Footer -->
     <footer class="footer">

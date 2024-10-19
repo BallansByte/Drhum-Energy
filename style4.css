@@ -268,24 +268,109 @@ button.clear:hover {
     margin-bottom: 20px;
   }
 }
-/* Background image for the calculations section */
-.calculation-section, .price-calculation-section {
-  background: url("/Drhum-Energy/markus-spiske-o8IfF0RUTTs-unsplash.jpg") no-repeat center center/cover; /* Add your truck image here */
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px); /* Blurring effect */
+.calculation-container {
+  background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
-  margin: 20px;
-  color: white; /* Adjust text color for readability */
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Set a maximum width for the container */
+  margin-left: 10%; /* Align the form to the left */
+  margin-bottom: 20px;
 }
 
-#fuel-type {
-  margin: 10px;
+.input-fields {
+  margin-bottom: 15px;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack the labels and inputs vertically */
+  align-items: center; /* Center items horizontally */
 }
 
-/* Mobile optimization */
-@media (max-width: 600px) {
-  input, select, button {
-    width: 100%;
-  }
+label {
+  margin-bottom: 5px;
+  text-align: center; /* Center the label text */
+}
+
+input[type=number] {
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for the input fields */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.fuel-selection {
+  margin-bottom: 15px;
+  display: flex; /* Use flexbox to center the fuel selection section */
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.result-section {
+  margin-top: 20px;
+  text-align: center; /* Center the result text */
+}
+
+.new-form-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Set a maximum width for the container */
+  margin-left: 0; /* Align the form to the left */
+}
+
+.input-field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input[type=number] {
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for the input field */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.selector {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Center the selector buttons */
+}
+
+.pill-selector {
+  display: flex;
+}
+
+.pill-button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 120px; /* Set a maximum width for the pill buttons */
+}
+
+.pill-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.result-section {
+  margin-top: 20px;
+  text-align: center; /* Center the result text */
 }/*# sourceMappingURL=style4.css.map */
