@@ -1,0 +1,184 @@
+/* Basic styles for the page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: yellow;
+}
+
+/* Service sections */
+.service-section {
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.service-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.service-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.service-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Parallax backgrounds */
+#bulk-oil-sales {
+  background: url("/Petroleum Stora b6c3092e-7444-45eb-81c4-33f65cc85b84.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#bulk-petroleum-transport {
+  background: url("/service55.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#filling-station-services {
+  background: url("/istockphoto-1329937925-1024x1024.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.service-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+  z-index: 1;
+}
+
+/* Footer styles */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: yellow;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-menu li {
+    margin: 10px 0;
+  }
+  .service-section {
+    padding: 60px 0;
+  }
+  .service-section h2 {
+    font-size: 2.5rem;
+  }
+  .service-section p {
+    font-size: 1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=style1.css.map */
