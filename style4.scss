@@ -286,3 +286,23 @@ button.clear:hover {
         margin-bottom: 20px;
     }
 }
+
+
+/* Background image for the calculations section */
+.calculation-section, .price-calculation-section {
+    background: url('/Drhum-Energy/markus-spiske-o8IfF0RUTTs-unsplash.jpg') no-repeat center center / cover; /* Add your truck image here */
+    backdrop-filter: blur(10px); /* Blurring effect */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white; /* Adjust text color for readability */
+}
+#fuel-type{
+    margin: 10px;
+}
+/* Mobile optimization */
+@media (max-width: 600px) {
+    input, select, button {
+        width: 100%;
+    }
+}

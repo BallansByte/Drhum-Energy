@@ -26,8 +26,3 @@ function calculatePmsVolume() {
         alert('Please enter a valid mass in metric tonnes.');
     }
 }
-
-function clearPmsFields() {
-    document.getElementById('pmsForm').reset();
-    document.getElementById('pmsVolumeLiters').value = '';
-}
