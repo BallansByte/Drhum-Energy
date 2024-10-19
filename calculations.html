@@ -60,49 +60,46 @@
         </div>
     </section>
     <hr class="styled-line">
-    <div class="calculation-container">
-        <h2>Price Calculation</h2>
-        
-        <div class="input-fields">
-            <label for="liters">Number of Liters:</label>
-            <input type="number" id="liters" placeholder="Enter liters" required>
-
-            <label for="price-per-liter">Price per Liter:</label>
-            <input type="number" id="price-per-liter" placeholder="Enter price per liter" required>
-        </div>
-
-       
-
-        <div class="result-section">
-            <h3>Total Price: <span id="total-price">₵0.00</span></h3>
-            <button id="calculate" onclick="calculatePrice()">Calculate</button>
-        </div>
-   
-
-
-
-<!-----Volume section------>
-<div class="new-form-section">
-    <h2>Conversion Form</h2>
+    <div class="forms-container">
+        <div class="calculation-container">
+            <h2>Price Calculation</h2>
+            
+            <div class="input-fields">
+                <label for="liters">Number of Liters:</label>
+                <input type="number" id="liters" placeholder="Enter liters" required>
     
-    <div class="input-field">
-        <label for="value">Enter Value:</label>
-        <input type="number" id="value" placeholder="Enter value" required>
-    </div>
-
-    <div class="selector">
-        <div class="pill-selector">
-            <button id="trucks" class="pill-button active" onclick="selectOption('trucks')">Trucks</button>
-            <button id="volume" class="pill-button" onclick="selectOption('volume')">Volume</button>
+                <label for="price-per-liter">Price per Liter:</label>
+                <input type="number" id="price-per-liter" placeholder="Enter price per liter" required>
+            </div>
+    
+            <div class="result-section">
+                <h3>Total Price: <span id="total-price">₵0.00</span></h3>
+                <button id="calculate" onclick="calculatePrice()">Calculate</button>
+            </div>
+        </div>
+    
+        <div class="new-form-section">
+            <h2>Conversion Form</h2>
+            
+            <div class="input-field">
+                <label for="value">Enter Value:</label>
+                <input type="number" id="value" placeholder="Enter value" required>
+            </div>
+    
+            <div class="selector">
+                <div class="pill-selector">
+                    <button id="trucks" class="pill-button active" onclick="selectOption('trucks')">Trucks</button>
+                    <button id="volume" class="pill-button" onclick="selectOption('volume')">Volume</button>
+                </div>
+            </div>
+    
+            <div class="result-section">
+                <h3>Result: <span id="result-value">₵0.00</span></h3>
+                <button id="calculate-conversion" onclick="calculateConversion()">Calculate</button>
+            </div>
         </div>
     </div>
-
-    <div class="result-section">
-        <h3>Result: <span id="result-value">₵0.00</span></h3>
-        <button id="calculate-conversion" onclick="calculateConversion()">Calculate</button>
-    </div>
-</div>
-</div>
+    
 <!----volume section end----------->
 
     <script src="scripts.js"></script>

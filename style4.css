@@ -313,6 +313,7 @@ input[type=number] {
 }
 
 .new-form-section {
+  height: 340px;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -373,4 +374,19 @@ input[type=number] {
 .result-section {
   margin-top: 20px;
   text-align: center; /* Center the result text */
-}/*# sourceMappingURL=style4.css.map */
+}
+
+.forms-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the forms */
+  align-items: flex-start; /* Align forms at the top */
+  max-width: 900px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the forms container */
+}
+
+.calculation-container, .new-form-section {
+  flex: 1; /* Allow forms to grow and shrink equally */
+  margin: 10px; /* Add some spacing between the forms */
+}
+
+/* Existing styles for .calculation-container, .new-form-section, and other elements remain the same *//*# sourceMappingURL=style4.css.map */
